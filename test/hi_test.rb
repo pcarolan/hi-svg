@@ -2,15 +2,13 @@ require 'test_helper'
 
 class HiTest < ActiveSupport::TestCase
 
-  def setup
-    @a = 1
+  test "calculate the area of a circle" do
+    assert_equal Hi.area(3), 28.274333882308138
   end
 
-  test "area" do
-    assert_equal @a,1
+  test "a circle has accurate dimensions" do
+    assert_includes Hi.circle(:r => 3), "<circle cx=\"1\" cy=\"1\" r=\"3\""
   end
-
-
 
 end
 

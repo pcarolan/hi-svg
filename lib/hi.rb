@@ -1,16 +1,19 @@
 module Hi
+
   include Math
 
-  def self.say_hi
-    "hi"
-  end 
-
-  class Circle
-
-    def area
-      PI * 2 ** 2
+    def self.area(r)
+      PI * r ** 2
     end
 
-  end
+    def self.circle(args)
+      r = args[:r]
+      w = args[:w]
+      cx = args[:cx]
+      cy = args[:cy]
+      fill = args[:fill]
+      stroke = args[:stroke]
 
+      "<circle cx=\"#{cx}\" cy=\"#{cy}\" r=\"#{r}\" fill=\"#{fill}\" stroke=\"#{stroke}\" stroke-width=\"#{w}\" />".html_safe
+    end
 end
