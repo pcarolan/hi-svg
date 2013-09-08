@@ -6,9 +6,11 @@ class HiTest < ActiveSupport::TestCase
     @a = 1
   end
 
-  test "sayhi" do
-    assert_equal 1,1
+  test "area" do
+    assert_equal @a,1
   end
+
+
 
 end
 
