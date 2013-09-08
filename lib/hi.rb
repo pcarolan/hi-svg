@@ -45,8 +45,8 @@ module Hi
       y = args[:y] || 10
       width = args[:width] || 10 # can't be negative
       height = args[:height] || 10 # can't be negative
-      rx = args[:cx] || 0 # can't be negative
-      ry = args[:cy] || 0 # can't be negative    
+      rx = args[:rx] || 0 # can't be negative
+      ry = args[:ry] || 0 # can't be negative    
 
       stroke_width = args[:stroke_width] || 1
       fill = args[:fill] || "white"
