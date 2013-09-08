@@ -2,13 +2,34 @@ require 'test_helper'
 
 class HiTest < ActiveSupport::TestCase
 
+  # circles
+
+  def setup
+    @circle_object = {:id => "c2", :r => 50, :w => 3, :cx => 400, :cy => 300, :fill => "blue", :stroke => "red"}
+    @rect_object = {:id => "r2", :x => 1, :y => 1, :width => 400, :height => 200, :rx => 0,:rx => 0, :fill => "green"}
+  end
+
   test "calculate the area of a circle" do
     assert_equal Hi.area(3), 28.274333882308138
   end
 
   test "a circle has accurate dimensions" do
-    assert_includes Hi.circle(:r => 3), "<circle cx=\"1\" cy=\"1\" r=\"3\""
+    assert_includes Hi.circle(@circle_object), "<circle id=\"c2\" cx=\"400\" cy=\"300\" r=\"50\""
   end
+
+  test "a circle with no arguments has accurate default dimensions" do
+    assert_includes Hi.circle, "<circle id=\"1\" cx=\"10\" cy=\"10\" r=\"5\""
+  end
+
+  # rects
+
+  test "a rect has accurate dimensions" do 
+    assert_includes Hi.rect(@rect_object), "<rect id=\"r2\" x=\"1\" y=\"1\" width=\"400\" height=\"200\" rx=\"0\" ry=\"0\" fill=\"green\""
+  end
+
+
+
+
 
 end
 
