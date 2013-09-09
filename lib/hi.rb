@@ -46,40 +46,7 @@ module Hi
 
     end
 
-    def self.ellipse(args={})
 
-      # set variables and defaults
-      id = args[:id] || "ed1"
-      cx = args[:cx] || 30 # The x-axis coordinate of the center of the ellipse.
-      cy = args[:cy] || 20 # The y-axis coordinate of the center of the ellipse.
-      rx = args[:rx] || 20 # The x-axis radius of the ellipse.
-      ry = args[:ry] || 10 # The y-axis radius of the ellipse.
-      fill = args[:fill] || "white"
-      stroke = args[:stroke] || "black"
-      stroke_width = args[:stroke_width] || 1
-
-      # TODO: stroke-dasharray
-
-      # required parameters
-      opening_tag = "<ellipse "
-      id = "id=\"#{id}\" "
-      cx = "cx=\"#{cx}\" "
-      cy = "cy=\"#{cy}\" "
-      rx = "rx=\"#{rx}\" "
-      ry = "ry=\"#{ry}\" "
-      closing_tag = "/>"
-
-      # optional parameters
-      fill = "fill=\"#{fill}\" "
-      stroke = "stroke=\"#{stroke}\" "
-      stroke_width = "stroke-width=\"#{stroke_width}\" "
-
-      elipse = opening_tag + id + cx + cy + rx + ry + fill + stroke + stroke_width + closing_tag
-
-      # output
-      elipse.html_safe
-
-    end
 
     def self.line(args={})
 

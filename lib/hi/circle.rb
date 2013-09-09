@@ -4,13 +4,13 @@ class Circle
 
   def initialize(args={})
 
-    @args = {:id => args[:id] || 1,
+    @args = {:id => args[:id] || "circle-id",
              :r => args[:r] || 5,
-             :stroke_width => args[:stroke_width] || 1,
              :cx => args[:cx] || 10, # The x-axis coordinate of the center of the circle.
              :cy => args[:cy] || 10, # The y-axis coordinate of the center of the circle.
              :fill => args[:fill] || "none",
              :stroke => args[:stroke] || "black",
+             :stroke_width => args[:stroke_width] || 1,
              :stroke_dasharray => args[:stroke_dasharray] || nil}
   end
 

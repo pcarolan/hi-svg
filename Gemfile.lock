@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     hi (0.0.1)
-      nokogiri (= 1.6.0)
       rails (~> 4.0.0)
 
 GEM
@@ -36,19 +35,14 @@ GEM
     atomic (1.1.13)
     builder (3.1.4)
     erubis (2.7.0)
-    factory_girl (4.2.0)
-      activesupport (>= 3.0.0)
     hike (1.2.3)
     i18n (0.6.5)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25)
-    mini_portile (0.5.1)
     minitest (4.7.5)
     multi_json (1.8.0)
-    nokogiri (1.6.0)
-      mini_portile (~> 0.5.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -90,6 +84,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  factory_girl
   hi!
   sqlite3

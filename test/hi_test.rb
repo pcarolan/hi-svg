@@ -1,12 +1,8 @@
-require 'minitest/autorun'
-
 class HiTest < ActiveSupport::TestCase
-
-  # circles
 
   def setup
     @rect_object = {:id => "r2", :x => 20, :y => 20, :width => 200, :height => 100, :rx => 40,:ry => 20, :fill => "green"}
-    @ellipse_object = {:id => "c2", :cx => 400, :cy => 300,:rx => 400, :ry => 300, :fill => "blue", :stroke => "red"}
+    @ellipse_object = 
     @line_object = {:id => "l2", :x1 => 200, :y1 => 200,:x2 => 400, :y2 => 400, :stroke => "red"}
   end
 
@@ -22,13 +18,6 @@ class HiTest < ActiveSupport::TestCase
 
   # ellipses
 
-  test "an ellipse has accurate dimensions" do
-    assert_includes Hi.ellipse(@ellipse_object), "<ellipse id=\"c2\" cx=\"400\" cy=\"300\" rx=\"400\" ry=\"300\""
-  end
-
-  test "an ellipse with no arguments has accurate dimensions" do
-    assert_includes Hi.ellipse, "<ellipse id=\"ed1\" cx=\"30\" cy=\"20\" rx=\"20\" ry=\"10\""
-  end
 
   # lines
 

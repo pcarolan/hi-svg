@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <%= Hi.circle(@circle_object) %>
+  <%= @circle.draw %>
   <%= Hi.rect(@rect_object) %>
-  <%= Hi.ellipse(@ellipse_object) %>
+  <%= @ellipse.draw %>
   <%= Hi.line(@line_object) %>
-  <% debugger %>
   <% @xgrid.each do |xgrid| %>
     <%= Hi.line(xgrid) %>
   <% end %>
