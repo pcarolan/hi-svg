@@ -1,5 +1,13 @@
 module Hi
 
+  project_root = File.dirname(File.absolute_path(__FILE__))
+  Dir.glob(project_root + '/hi/*', &method(:require))
+
+  # Primitives
+  # Done: 'circle', 'rect', 'ellipse','line'
+  # TODO: 'text', 'image','path', 'use'
+  # Maybe: 'polyline', 'polygon' (just use path?)
+
   include Math
 
     def self.circle(args={})
@@ -12,6 +20,8 @@ module Hi
       cy = args[:cy] || 10 # The y-axis coordinate of the center of the circle.ß
       fill = args[:fill] || "white"
       stroke = args[:stroke] || "black"
+
+      # TODO: stroke-dasharray
 
       # required parameters
       opening_tag = "<circle "
@@ -83,6 +93,8 @@ module Hi
       stroke = args[:stroke] || "black"
       stroke_width = args[:stroke_width] || 1
 
+      # TODO: stroke-dasharray
+
       # required parameters
       opening_tag = "<ellipse "
       id = "id=\"#{id}\" "
@@ -113,6 +125,10 @@ module Hi
       y2 = args[:y2] || 100 # The y-axis coordinate of the end of the line.
       stroke = args[:stroke] || "black"
       stroke_width = args[:stroke_width] || 1
+
+      # TODO: stroke_linecap 
+      # TODO: stroke_dasharray 
+      # TODO: markers
 
       # required
       opening_tag = "<line "

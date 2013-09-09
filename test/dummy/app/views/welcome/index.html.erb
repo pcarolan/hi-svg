@@ -3,4 +3,8 @@
   <%= Hi.rect(@rect_object) %>
   <%= Hi.ellipse(@ellipse_object) %>
   <%= Hi.line(@line_object) %>
+  <% debugger %>
+  <% @xgrid.each do |xgrid| %>
+    <%= Hi.line(xgrid) %>
+  <% end %>
 </svg>
