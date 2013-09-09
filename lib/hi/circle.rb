@@ -9,7 +9,7 @@ class Circle
              :stroke_width => args[:stroke_width] || 1,
              :cx => args[:cx] || 10, # The x-axis coordinate of the center of the circle.
              :cy => args[:cy] || 10, # The y-axis coordinate of the center of the circle.
-             :fill => args[:fill] || "white",
+             :fill => args[:fill] || "none",
              :stroke => args[:stroke] || "black",
              :stroke_dasharray => args[:stroke_dasharray] || nil}
   end

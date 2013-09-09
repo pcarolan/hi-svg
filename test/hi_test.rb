@@ -5,18 +5,9 @@ class HiTest < ActiveSupport::TestCase
   # circles
 
   def setup
-    @circle_object = {:id => "c2", :r => 50, :cx => 400, :cy => 300, :fill => "blue", :stroke => "red"}
     @rect_object = {:id => "r2", :x => 20, :y => 20, :width => 200, :height => 100, :rx => 40,:ry => 20, :fill => "green"}
     @ellipse_object = {:id => "c2", :cx => 400, :cy => 300,:rx => 400, :ry => 300, :fill => "blue", :stroke => "red"}
     @line_object = {:id => "l2", :x1 => 200, :y1 => 200,:x2 => 400, :y2 => 400, :stroke => "red"}
-  end
-
-  test "a circle has accurate dimensions" do
-    assert_includes Hi.circle(@circle_object), "<circle id=\"c2\" cx=\"400\" cy=\"300\" r=\"50\""
-  end
-
-  test "a circle with no arguments has accurate default dimensions" do
-    assert_includes Hi.circle, "<circle id=\"1\" cx=\"10\" cy=\"10\" r=\"5\""
   end
 
   # rects
@@ -44,8 +35,6 @@ class HiTest < ActiveSupport::TestCase
   test "a line has accurate dimensions" do
     assert_includes Hi.line(@line_object), "<line id=\"l2\" x1=\"200\" y1=\"200\" x2=\"400\" y2=\"400\""
   end
-
-
 
  # Future Specs
 
