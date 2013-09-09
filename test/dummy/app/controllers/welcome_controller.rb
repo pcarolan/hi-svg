@@ -4,7 +4,8 @@ class WelcomeController < ApplicationController
 
     @rect_object = {id: "r2",x: 20,y: 20,width: 200,height: 100,rx: 5,ry: 5,fill: "red", stroke: "white",stroke_width: 2}
 
-    @ellipse_object = {:id => "c2", :cx => 150, :cy => 200,:rx => 80, :ry => 50, :fill => "orange", :stroke => "white"}
+    @ellipse_object = {:id => "c2", :cx => 150, :cy => 200,:rx => 80, :ry => 50, :fill => "orange", :stroke => "white",stroke_width: 2}
+    @line_object = {:id => "l2", :x1 => 200, :y1 => 200,:x2 => 400, :y2 => 400, :stroke => "green",:stroke_width => 10}
 
   end
 end

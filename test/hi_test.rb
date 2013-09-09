@@ -1,4 +1,4 @@
-require 'test_helper'
+require 'minitest/autorun'
 
 class HiTest < ActiveSupport::TestCase
 
@@ -8,10 +8,7 @@ class HiTest < ActiveSupport::TestCase
     @circle_object = {:id => "c2", :r => 50, :cx => 400, :cy => 300, :fill => "blue", :stroke => "red"}
     @rect_object = {:id => "r2", :x => 20, :y => 20, :width => 200, :height => 100, :rx => 40,:ry => 20, :fill => "green"}
     @ellipse_object = {:id => "c2", :cx => 400, :cy => 300,:rx => 400, :ry => 300, :fill => "blue", :stroke => "red"}
-  end
-
-  test "calculate the area of a circle" do
-    assert_equal Hi.area(3), 28.274333882308138
+    @line_object = {:id => "l2", :x1 => 200, :y1 => 200,:x2 => 400, :y2 => 400, :stroke => "red"}
   end
 
   test "a circle has accurate dimensions" do
@@ -25,18 +22,46 @@ class HiTest < ActiveSupport::TestCase
   # rects
 
   test "a rect has accurate dimensions" do 
-    assert_includes Hi.rect(@rect_object), "<rect id=\"r2\" x=\"20\" y=\"20\" width=\"200\" height=\"100\" rx=\"40\" ry=\"20\" fill=\"green\""
+    assert_includes Hi.rect(@rect_object), "<rect id=\"r2\" x=\"20\" y=\"20\" width=\"200\" height=\"100\" rx=\"40\" ry=\"20\""
   end
 
   test "a rect with no arguments has accurate dimensions" do 
-    assert_includes Hi.rect, "<rect id=\"r1\" x=\"10\" y=\"10\" width=\"10\" height=\"10\" rx=\"0\" ry=\"0\" fill=\"white\""
+    assert_includes Hi.rect, "<rect id=\"r1\" x=\"10\" y=\"10\" width=\"10\" height=\"10\" rx=\"0\" ry=\"0\""
   end
+
+  # ellipses
 
   test "an ellipse has accurate dimensions" do
     assert_includes Hi.ellipse(@ellipse_object), "<ellipse id=\"c2\" cx=\"400\" cy=\"300\" rx=\"400\" ry=\"300\""
   end
 
+  test "an ellipse with no arguments has accurate dimensions" do
+    assert_includes Hi.ellipse, "<ellipse id=\"ed1\" cx=\"30\" cy=\"20\" rx=\"20\" ry=\"10\""
+  end
 
+  # lines
+
+  test "a line has accurate dimensions" do
+    assert_includes Hi.line(@line_object), "<line id=\"l2\" x1=\"200\" y1=\"200\" x2=\"400\" y2=\"400\""
+  end
+
+
+
+ # Future Specs
+
+ # 1. specify if it's an svg section or document.
+ # 2. svg groups
+ # 3. svg transforms
+ # 4. animations / animatable
+ # 5. svg links
+#  conditional processing attributes 
+# core attributes 
+# graphical event attributes 
+# presentation attributes 
+# ‘class’
+# ‘style’
+# ‘externalResourcesRequired’
+# ‘transform’
 
 
 end
