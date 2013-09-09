@@ -5,8 +5,9 @@ class HiTest < ActiveSupport::TestCase
   # circles
 
   def setup
-    @circle_object = {:id => "c2", :r => 50, :w => 3, :cx => 400, :cy => 300, :fill => "blue", :stroke => "red"}
+    @circle_object = {:id => "c2", :r => 50, :cx => 400, :cy => 300, :fill => "blue", :stroke => "red"}
     @rect_object = {:id => "r2", :x => 20, :y => 20, :width => 200, :height => 100, :rx => 40,:ry => 20, :fill => "green"}
+    @ellipse_object = {:id => "c2", :cx => 400, :cy => 300,:rx => 400, :ry => 300, :fill => "blue", :stroke => "red"}
   end
 
   test "calculate the area of a circle" do
@@ -31,6 +32,9 @@ class HiTest < ActiveSupport::TestCase
     assert_includes Hi.rect, "<rect id=\"r1\" x=\"10\" y=\"10\" width=\"10\" height=\"10\" rx=\"0\" ry=\"0\" fill=\"white\""
   end
 
+  test "an ellipse has accurate dimensions" do
+    assert_includes Hi.ellipse(@ellipse_object), "<ellipse id=\"c2\" cx=\"400\" cy=\"300\" rx=\"400\" ry=\"300\""
+  end
 
 
 
