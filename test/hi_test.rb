@@ -1,23 +1,8 @@
 class HiTest < ActiveSupport::TestCase
 
   def setup
-    @rect_object = {:id => "r2", :x => 20, :y => 20, :width => 200, :height => 100, :rx => 40,:ry => 20, :fill => "green"}
-    @ellipse_object = 
     @line_object = {:id => "l2", :x1 => 200, :y1 => 200,:x2 => 400, :y2 => 400, :stroke => "red"}
   end
-
-  # rects
-
-  test "a rect has accurate dimensions" do 
-    assert_includes Hi.rect(@rect_object), "<rect id=\"r2\" x=\"20\" y=\"20\" width=\"200\" height=\"100\" rx=\"40\" ry=\"20\""
-  end
-
-  test "a rect with no arguments has accurate dimensions" do 
-    assert_includes Hi.rect, "<rect id=\"r1\" x=\"10\" y=\"10\" width=\"10\" height=\"10\" rx=\"0\" ry=\"0\""
-  end
-
-  # ellipses
-
 
   # lines
 

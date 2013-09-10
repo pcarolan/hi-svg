@@ -8,46 +8,6 @@ module Hi
   # TODO: 'text', 'image','path', 'use'
   # Maybe: 'polyline', 'polygon' (just use path?)
 
-    def self.rect(args={})
-
-      # set variables and defaults
-      id = args[:id] || "r1"
-      x = args[:x] || 10 # The x-axis coordinate of the side of the rectangle which has the smaller x-axis coordinate value
-      y = args[:y] || 10 # The y-axis coordinate of the side of the rectangle which has the smaller y-axis coordinate
-      width = args[:width] || 10 # can't be negative
-      height = args[:height] || 10 # can't be negative
-      rx = args[:rx] || 0 # can't be negative
-      ry = args[:ry] || 0 # can't be negative    
-
-      stroke_width = args[:stroke_width] || 1
-      fill = args[:fill] || "white"
-      stroke = args[:stroke] || "black"
-
-      # required parameters
-      opening_tag = "<rect "
-      id = "id=\"#{id}\" "
-      x = "x=\"#{x}\" "
-      y = "y=\"#{y}\" "
-      width  = "width=\"#{width}\" "
-      height  = "height=\"#{height}\" "
-      closing_tag = "/>"
-
-      # optional parameters
-      rx = "rx=\"#{rx}\" " # corner radius for smooth edges
-      ry = "ry=\"#{ry}\" " # corner radius for smooth edges
-      fill = "fill=\"#{fill}\" "
-      stroke = "stroke=\"#{stroke}\" "
-      stroke_width = "stroke-width=\"#{stroke_width}\" "
-
-      circle = opening_tag + id + x + y + width +  height + rx + ry + fill + stroke + stroke_width + closing_tag
-
-      # output
-      circle.html_safe
-
-    end
-
-
-
     def self.line(args={})
 
       id = args[:id] || "l1"
