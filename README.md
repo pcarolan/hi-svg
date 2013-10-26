@@ -1,5 +1,3 @@
-## Hi
-
 ![nogaku_lake](https://f.cloud.github.com/assets/900966/1414351/bfdb6ff6-3e7b-11e3-9a2f-f6788c8e53f6.png)
 
 Nogaku is a human interface library for Ruby and Rails.
