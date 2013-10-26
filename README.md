@@ -1,18 +1,16 @@
 ## Hi
 
+![nokagu](https://www.dropbox.com/s/olztlefspainqh3/nogaku_lake.png)
+
 Nogaku is a human interface library for Ruby and Rails.
 
-## Shapes Implemented
-
-* circles
-* ellipses
-* rectangles
-
 ## Roadmap
-
-1. lines
-2. animation
-3. modules
+* circles [:started]
+* ellipses [:started]
+* rectangles [:started]
+* lines [:not_started]
+* animation [:not_started]
+* modules [:not_started]
 
 ## License
 
