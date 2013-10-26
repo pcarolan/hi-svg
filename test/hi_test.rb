@@ -1,4 +1,4 @@
-class HiTest < ActiveSupport::TestCase
+class NogakuTest < ActiveSupport::TestCase
 
   def setup
     @line_object = {:id => "l2", :x1 => 200, :y1 => 200,:x2 => 400, :y2 => 400, :stroke => "red"}
