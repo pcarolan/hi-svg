@@ -18,6 +18,6 @@ This project uses the MIT-LICENSE.
 
 From time to time, developers must reach an equilibrium in which disruption happens within the framework and not because of it. SVG has been partying since 1999, Ruby since 1995, Rails since 2005, and CSS since 1996. These are good technologies which have very few use cases they haven't cracked.
 
-This Library's goal is to provide a set of tools that extend into an SVG web interface.
+This Library's goal is to provide a set of tools that extend into an SVG powered web interface.
 
 :Pat
