@@ -10,6 +10,24 @@ Nogaku is a human interface library for Ruby and Rails.
 * animation [:not_started]
 * modules [:not_started]
 
+## How to
+
+Draw a circle:
+
+```
+Circle.new(args)
+```
+Draw a rectangle or square
+```
+Rect.new(args)
+```
+Draw an ellipse
+```
+Ellipse.new(args)
+```
+
+
+
 ## License
 
 This project uses the MIT-LICENSE.
