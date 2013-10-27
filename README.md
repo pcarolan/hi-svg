@@ -47,7 +47,6 @@ Rect.new(args)
              :fill => args[:fill] || "none",
              :stroke => args[:stroke] || "black",
              :stroke_width => args[:stroke_width] || 1}
-  end  
 
 ```
 Draw an ellipse
