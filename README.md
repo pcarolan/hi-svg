@@ -16,14 +16,47 @@ Draw a circle:
 
 ```
 Circle.new(args)
+
+    @args = {:id => args[:id] || "circle-id",
+             :r => args[:r] || 5,
+             :cx => args[:cx] || 10, # The x-axis coordinate of the center of the circle.
+             :cy => args[:cy] || 10, # The y-axis coordinate of the center of the circle.
+             :fill => args[:fill] || "none",
+             :stroke => args[:stroke] || "black",
+             :stroke_width => args[:stroke_width] || 1,
+             :stroke_dasharray => args[:stroke_dasharray] || nil}
 ```
 Draw a rectangle or square
 ```
 Rect.new(args)
+
+    @args = {:id => args[:id] || "rect-id",
+             :r => args[:r] || 5,
+             :x => args[:x] || 10, # The x-axis coordinate of the side of the rectangle which has the smaller x-axis coordinate value.
+             :y => args[:y] || 10, # The y-axis coordinate of the side of the rectangle which has the smaller y-axis coordinate.
+             :width => args[:width] || 10, # can't be negative
+             :height => args[:height] || 10, # can't be negative
+             :rx => args[:rx] || 0, # can't be negative
+             :ry => args[:ry] || 0, # can't be negative  
+             :fill => args[:fill] || "none",
+             :stroke => args[:stroke] || "black",
+             :stroke_width => args[:stroke_width] || 1}
+  end  
+
 ```
 Draw an ellipse
 ```
 Ellipse.new(args)
+
+    @args = {:id => args[:id] || "ellipse-id",
+         :cx => args[:cx] || 30, # The x-axis coordinate of the center of the ellipse.
+         :cy => args[:cy] || 20, # The y-axis coordinate of the center of the ellipse.
+         :rx => args[:rx] || 20, # The x-axis radius of the ellipse.
+         :ry => args[:ry] || 10, # The y-axis radius of the ellipse.
+         :fill => args[:fill] || "none",
+         :stroke => args[:stroke] || "black",
+         :stroke_width => args[:stroke_width] || 1,
+         :stroke_dasharray => args[:stroke_dasharray] || nil}
 ```
 
 
