@@ -3,12 +3,16 @@
 Nogaku is a human interface library for Ruby and Rails.
 
 ## Roadmap
-* circles [:started]
-* ellipses [:started]
-* rectangles [:started]
-* lines [:not_started]
-* animation [:not_started]
-* modules [:not_started]
+[:started] circles 
+[:started] ellipses 
+[:started] rectangles 
+[:not_started] lines 
+[:not_started] polylines 
+[:not_started] polygons 
+[:not_started] operations 
+[:not_started] animation 
+[:not_started] modules 
+
 
 ## How to
 
@@ -18,7 +22,7 @@ Draw a circle:
 Circle.new(args)
 
     @args = {:id => args[:id] || "circle-id",
-             :r => args[:r] || 5,
+             :r => args[:r] || 5, # The radius of the circle.
              :cx => args[:cx] || 10, # The x-axis coordinate of the center of the circle.
              :cy => args[:cy] || 10, # The y-axis coordinate of the center of the circle.
              :fill => args[:fill] || "none",
