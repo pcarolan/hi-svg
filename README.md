@@ -3,6 +3,8 @@
 Nogaku is a human interface library for Ruby and Rails.
 
 ## Roadmap
+
+```
 [:started] circles 
 [:started] ellipses 
 [:started] rectangles 
@@ -12,7 +14,7 @@ Nogaku is a human interface library for Ruby and Rails.
 [:not_started] operations 
 [:not_started] animation 
 [:not_started] modules 
-
+```
 
 ## How to
 
