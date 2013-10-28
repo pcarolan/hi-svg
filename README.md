@@ -72,7 +72,7 @@ This project uses the MIT-LICENSE.
 
 ## Polemic
 
-From time to time, developers must reach an equilibrium in which disruption happens within the framework and not because of it. 
+From time to time, developers must reach a point where disruption happens within the framework and not because of it. 
 
 This Library's goal is to provide a set of tools that extend into an SVG powered web interface.
 
