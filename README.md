@@ -6,7 +6,7 @@ Nogaku is a human interface library for Ruby and Rails.
 
 ```
 
-Please use symantic versioning:
+Please use symantic versioning.
 
 0.1:
 
