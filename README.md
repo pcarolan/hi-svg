@@ -46,7 +46,7 @@ This project uses the MIT-LICENSE.
 
 ## Polemic
 
-Once in a while developers must reach a point when disruption happens within the framework and not because of it. 
+Once in a while developers should reach a point when disruption happens within a framework and not because of it. 
 
 This Library's goal is to extend ruby into an SVG powered web interface.
 
