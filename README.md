@@ -10,15 +10,16 @@ Please use symantic versioning:
 
 0.1:
 
-  [:done] circles 
-  [:done] ellipses 
-  [:done] rectangles 
-  [:not_started] lines 
-  [:not_started] polylines 
-  [:not_started] polygons 
-  [:not_started] operations 
-  [:not_started] animation 
-  [:not_started] modules 
+  done: circles 
+        ellipses 
+        rectangles 
+        
+  not_started: lines 
+               polylines 
+               polygons 
+               operations 
+               animation 
+               modules 
 ```
 
 ## How to
