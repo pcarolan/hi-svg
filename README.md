@@ -4,8 +4,6 @@ Hi is a human interface library for Ruby and Rails.
 
 ## Roadmap
 
-```
-
 Please use symantic versioning.
 
 current version: 0.1:
