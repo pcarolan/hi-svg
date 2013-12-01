@@ -8,19 +8,7 @@ Hi is a human interface library for Ruby and Rails.
 
 Please use symantic versioning.
 
-0.1:
-
-  done: circles 
-        ellipses 
-        rectangles 
-        
-  not_started: lines 
-               polylines 
-               polygons 
-               operations 
-               animation 
-               modules 
-```
+current version: 0.1:
 
 ## How to
 
