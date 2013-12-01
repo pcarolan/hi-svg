@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :Nogaku do
+# task :Hi do
 #   # Task goes here
 # end

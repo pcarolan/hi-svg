@@ -1,6 +1,6 @@
-![nogaku](https://f.cloud.github.com/assets/900966/1458106/d58ac6ac-4354-11e3-91d0-dff90d69e11e.png)
+![hi](https://f.cloud.github.com/assets/900966/1458106/d58ac6ac-4354-11e3-91d0-dff90d69e11e.png)
 
-Nogaku is a human interface library for Ruby and Rails.
+Hi is a human interface library for Ruby and Rails.
 
 ## Roadmap
 

@@ -1,12 +1,12 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "nogaku/version"
+require "hi/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "Nogaku"
-  s.version     = Nogaku::VERSION
+  s.name        = "Hi"
+  s.version     = Hi::VERSION
   s.authors     = ["Pat Carolan"]
   s.email       = ["patrick.carolan@gmail.com"]
   s.homepage    = ""

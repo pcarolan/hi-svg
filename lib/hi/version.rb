@@ -1,3 +1,3 @@
-module Nogaku
+module Hi
   VERSION = "0.0.1"
 end

@@ -1,7 +1,7 @@
-module Nogaku
+module Hi
 
   project_root = File.dirname(File.absolute_path(__FILE__))
-  Dir.glob(project_root + '/nogaku/*', &method(:require))
+  Dir.glob(project_root + '/hi/*', &method(:require))
 
   # Primitives
   # Done: 'circle', 'rect', 'ellipse','line'
