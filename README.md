@@ -6,7 +6,7 @@ Hi is a human interface library for Ruby and Rails.
 
 Please use symantic versioning.
 
-current version: 0.1:
+current version: 0.1
 
 ## How to
 
